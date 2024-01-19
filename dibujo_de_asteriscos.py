@@ -5,11 +5,11 @@ def rectangulo():
     ancho = int(input("Ancho: "))
 
     for x_altura in range(altura):
-        print("\n")
+        print("", end="\n")
         print("*", end="")
         for x_ancho in range(ancho-1):
-            print("*".rjust(4), end="")
-    print("\n")
+            print("*", end="")
+    print("", end="\n")
 rectangulo()
 
 # Escriba un programa que dibuje el triángulo del tamaño indicado por el usuario de acuerdo al ejemplo:
@@ -25,14 +25,7 @@ triangulo()
 def hexagono():
     lado = int(input("Lado: "))
     
-    for fila in range(lado * 2 - 1):
-        espacios = abs(lado - 1 - fila)
-        print(" " * espacios, end="")
-        
-        if fila < lado or fila >= lado * 2 - 1:
-            print("* " * (lado + fila), end="")
-        else:
-            print("* ", end="")
-        
-        print("")
+    # Altura
+    for x in range((lado*2)-1):
+        print("*")
 hexagono()
