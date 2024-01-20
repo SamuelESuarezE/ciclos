@@ -1,12 +1,13 @@
 # Desarrolle un programa que entregue un valor aproximado de e, calculando esta suma hasta que la diferencia entre dos sumandos consecutivos sea menor que 0,0001.
+
 import math
 lista = []
 x = 0
 e_anterior=0
-diferencia=1
+diferencia=0
 e=0
 numero_anterior=0
-numero=2
+numero=0
 
 while diferencia>0.0001 or diferencia==0:
     e_anterior = e
