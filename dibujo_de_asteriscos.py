@@ -18,6 +18,7 @@ def triangulo():
     
     for x_altura in range(altura+1):
         print("*"*x_altura)
+    print("\n")
 triangulo()
 # Escriba un programa que dibuje el hexágono del tamaño indicado por el usuario de acuerdo al ejemplo:
 
@@ -27,7 +28,7 @@ def hexagono():
     # Altura
     for x in range(lado):
         var = str("*"*(lado+(2*x)))
-        print(var.center(40))
+        print(var.center(100))
     
     mitad = (var.count("*"))/2
 
@@ -35,5 +36,5 @@ def hexagono():
         var = var[:-2]
         if var.count("*") == lado-2:
             break
-        print(var.center(40))
+        print(var.center(100))
 hexagono()
